@@ -1,0 +1,300 @@
+:root {
+    --primary-color: #2B3A47; /* Lightened blue */
+    --secondary-color: #5E3023;
+    --light-bg: #FDE5D4;
+    --accent-color: #D6CC99;
+    --text-color: #333;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background: #6B8E75; /* Lightened green */
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .contact-icons {
+    margin-top: 20px;
+}
+
+header .contact-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header .contact-icons a:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+nav {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+section {
+    margin: 20px 0;
+    background-color: var(--light-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.profile-img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 15px;
+    border: 2px solid var(--secondary-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#page-wrapper {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+button,
+.back-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover,
+.back-button:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+.contact-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-icons a:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.project-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+button:hover,
+.back-button:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    button,
+    .back-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Skills Section */
+#skills {
+    padding: 20px 0;
+    background-color: var(--light-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#skills h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill img:hover {
+    transform: scale(1.1);
+}
+
+.skill p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
